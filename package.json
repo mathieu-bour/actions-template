@@ -8,7 +8,7 @@
     "format": "prettier --write \"src/**/*.ts\"",
     "lint": "eslint \"src/**\"",
     "lint:fix": "eslint --fix \"src/**\"",
-    "typecheck": "eslint \"src/**\"",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
     "test": "jest",
     "prebuild": "npm run clean",
     "build": "node .esbuildrc.js"
@@ -33,6 +33,7 @@
     "@types/jest": "^26.0.20",
     "@types/node": "^12.19.15",
     "@typescript-eslint/eslint-plugin": "^4.14.0",
+    "@typescript-eslint/parser": "^4.14.0",
     "esbuild": "^0.8.34",
     "eslint": "^7.18.0",
     "eslint-config-prettier": "^7.2.0",
