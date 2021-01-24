@@ -11,7 +11,7 @@
     "typecheck": "eslint \"src/**\"",
     "test": "jest",
     "prebuild": "npm run clean",
-    "build": "node .esbuild.js"
+    "build": "node .esbuildrc.js"
   },
   "keywords": [
     "github-actions",
